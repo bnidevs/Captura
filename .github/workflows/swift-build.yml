@@ -9,7 +9,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Package
-        run: swift package init
       - name: Build
-        run: swift build
+        run: xcodebuild -scheme macOS -project AutoGIF\ Spooler/AutoGIF\ Spooler.xcodeproj build
