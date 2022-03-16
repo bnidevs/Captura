@@ -9,7 +9,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Debug Build
-        run: xcodebuild -scheme Debug -project AutoGIF\ Spooler/AutoGIF\ Spooler.xcodeproj build
-      - name: Release Build
-        run: xcodebuild -scheme Release -project AutoGIF\ Spooler/AutoGIF\ Spooler.xcodeproj build
+      - name: Build
+        run: xcodebuild -scheme "AutoGIF Spooler" -project AutoGIF\ Spooler/AutoGIF\ Spooler.xcodeproj build
