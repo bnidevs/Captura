@@ -11,7 +11,9 @@ import Aperture
 struct ContentView: View {
     @Binding public var recorder: Recorder
     @Binding public var sbc: StatusBarController?
+    @Binding public var canRecord: Bool
     
+    @State public var recordPermState = CGPreflightScreenCaptureAccess()
     @State public var recordingState = false
     @State public var fileType = true
     @State public var writing = false
@@ -30,6 +32,8 @@ struct ContentView: View {
                         .frame(width: 10, height: 10)
                     Spacer()
                     Button(recordingState ? "Stop" : "Start", action: callSS)
+                        .disabled(!recordPermState)
+                        .onHover(perform: {if($0){recordPermState = canRecord}})
                 }
                     .frame(width: 200, height: 25, alignment: .topLeading)
                 HStack(alignment: .center, spacing: 10){
@@ -84,5 +88,10 @@ struct ContentView: View {
             
         }
         NSApp.terminate(self)
+    }
+    
+    func grantPerms(){
+        recordPermState = true
+        print(recordPermState)
     }
 }

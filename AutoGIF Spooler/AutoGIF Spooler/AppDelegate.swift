@@ -9,9 +9,16 @@ import Foundation
 import Cocoa
 import SwiftUI
 
+enum NoScreenAccess: Error {
+    case noscreenaccess
+}
+
 class AppData: ObservableObject {
     @Published var recorder: Recorder = Recorder()
     @Published var statusBar: StatusBarController?
+    
+    @available(macOS, introduced: 10.15)
+    @Published var recordPerm: Bool = CGPreflightScreenCaptureAccess()
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -21,9 +28,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @ObservedObject var appdata: AppData = AppData.init()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let contentView = ContentView(recorder: $appdata.recorder, sbc: $appdata.statusBar)
+        let contentView = ContentView(recorder: $appdata.recorder, sbc: $appdata.statusBar, canRecord: $appdata.recordPerm)
         popover.contentViewController = NSHostingController(rootView: contentView)
         appdata.statusBar = StatusBarController.init(popover)
+        
+        if(!appdata.recordPerm){
+            if(!CGRequestScreenCaptureAccess()){
+                let errordialog = NSAlert.init(error: NoScreenAccess.noscreenaccess)
+                errordialog.messageText = "AutoGIF requires screen recording access"
+                errordialog.informativeText = "Please proceed to the 'Security and Privacy' section in your System Preferences and enable permissions for AutoGIF to record your screen, then restart the app"
+                errordialog.runModal()
+            }else{
+                appdata.recordPerm = true
+            }
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
