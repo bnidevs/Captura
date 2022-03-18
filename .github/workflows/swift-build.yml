@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Remove Code Sign Identity
-        run: cat AutoGIF\ Spooler/AutoGIF\ Spooler.xcodeproj/project.pbxproj | sed -e 's/Mac Developer/-/g'
+        run: sed -i 's/Mac Developer/-/g' AutoGIF\ Spooler/AutoGIF\ Spooler.xcodeproj/project.pbxproj
       - name: Build
         run: xcodebuild -scheme "AutoGIF Spooler" -project AutoGIF\ Spooler/AutoGIF\ Spooler.xcodeproj build
