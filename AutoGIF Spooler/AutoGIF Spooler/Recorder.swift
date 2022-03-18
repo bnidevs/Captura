@@ -34,7 +34,8 @@ class Recorder {
     func genFilename() -> URL {
         let paths = FileManager.default.urls(for: .moviesDirectory, in: .userDomainMask)
         let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "yyyy-MM-dd--HH:mm:ss"
+        dateformatter.dateFormat = "yyyy-MM-dd--HHmmss"
+        dateformatter.timeZone = TimeZone(secondsFromGMT: TimeZone.current.secondsFromGMT())
         let url = URL(string: paths[0].absoluteString + "AutoGIF-" + dateformatter.string(from: Date()) + ".mp4")!
         return url
     }
