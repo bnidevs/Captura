@@ -1,4 +1,6 @@
-# AutoGIF-Swift
+# AutoGIF-Swift 
+
+<img height="150" src="https://github.com/bnidevs/AutoGIF-Swift/blob/main/AutoGIF%20Spooler/AutoGIF%20Spooler/Assets.xcassets/AppIcon.appiconset/AutoGIF%20Logo.png?raw=true">
 
 ![build](https://github.com/bnidevs/AutoGIF-Swift/actions/workflows/xcodebuild.yml/badge.svg)
 
