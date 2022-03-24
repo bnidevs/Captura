@@ -1,6 +1,6 @@
 # Captura
 
-<img height="150" src="https://github.com/bnidevs/Captura/blob/main/Captura/Captura/Assets.xcassets/AppIcon.appiconset/AutoGIF%20Logo.png?raw=true">
+<img height="150" src="https://github.com/bnidevs/Captura/blob/main/Captura/Captura/Assets.xcassets/MenuBarIcon.imageset/AutoGIF%20Logo.png?raw=true">
 
 ![build](https://github.com/bnidevs/Captura/actions/workflows/xcodebuild.yml/badge.svg)
 
