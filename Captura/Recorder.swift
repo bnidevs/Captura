@@ -39,6 +39,6 @@ func genFilename() -> URL {
     let dateformatter = DateFormatter()
     dateformatter.dateFormat = "yyyy-MM-dd--HHmmss"
     dateformatter.timeZone = TimeZone(secondsFromGMT: TimeZone.current.secondsFromGMT())
-    let url = URL(string: paths[0].absoluteString + "AutoGIF-" + dateformatter.string(from: Date()) + ".mp4")!
+    let url = URL(string: paths[0].absoluteString + "Captura-" + dateformatter.string(from: Date()) + ".mp4")!
     return url
 }

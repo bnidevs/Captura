@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		807A0C1527ED1C77004ED793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807A0C1427ED1C77004ED793 /* Assets.xcassets */; };
 		807A0C1827ED1C77004ED793 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807A0C1727ED1C77004ED793 /* Preview Assets.xcassets */; };
-		807A0C2127ED1C9C004ED793 /* Aperture in Frameworks */ = {isa = PBXBuildFile; productRef = 807A0C2027ED1C9C004ED793 /* Aperture */; };
 		80AC934527ED1E14004A7A02 /* CapturaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934127ED1E14004A7A02 /* CapturaApp.swift */; };
 		80AC934627ED1E14004A7A02 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934227ED1E14004A7A02 /* StatusBarController.swift */; };
 		80AC934727ED1E14004A7A02 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934327ED1E14004A7A02 /* Recorder.swift */; };
 		80AC934827ED1E14004A7A02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934427ED1E14004A7A02 /* ContentView.swift */; };
 		80AC934A27ED1E20004A7A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934927ED1E20004A7A02 /* AppDelegate.swift */; };
+		80F2765827ED32140076F716 /* Aperture in Frameworks */ = {isa = PBXBuildFile; productRef = 80F2765727ED32140076F716 /* Aperture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				807A0C2127ED1C9C004ED793 /* Aperture in Frameworks */,
+				80F2765827ED32140076F716 /* Aperture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			);
 			name = Captura;
 			packageProductDependencies = (
-				807A0C2027ED1C9C004ED793 /* Aperture */,
+				80F2765727ED32140076F716 /* Aperture */,
 			);
 			productName = Captura;
 			productReference = 807A0C0D27ED1C76004ED793 /* Captura.app */;
@@ -130,7 +130,7 @@
 			);
 			mainGroup = 807A0C0427ED1C76004ED793;
 			packageReferences = (
-				807A0C1F27ED1C9C004ED793 /* XCRemoteSwiftPackageReference "Aperture" */,
+				80F2765627ED32140076F716 /* XCRemoteSwiftPackageReference "Aperture" */,
 			);
 			productRefGroup = 807A0C0E27ED1C76004ED793 /* Products */;
 			projectDirPath = "";
@@ -307,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = AutoGIF.Captura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -339,7 +339,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = AutoGIF.Captura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -372,20 +372,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		807A0C1F27ED1C9C004ED793 /* XCRemoteSwiftPackageReference "Aperture" */ = {
+		80F2765627ED32140076F716 /* XCRemoteSwiftPackageReference "Aperture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/wulkano/Aperture";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		807A0C2027ED1C9C004ED793 /* Aperture */ = {
+		80F2765727ED32140076F716 /* Aperture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 807A0C1F27ED1C9C004ED793 /* XCRemoteSwiftPackageReference "Aperture" */;
+			package = 80F2765627ED32140076F716 /* XCRemoteSwiftPackageReference "Aperture" */;
 			productName = Aperture;
 		};
 /* End XCSwiftPackageProductDependency section */

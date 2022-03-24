@@ -20,7 +20,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10){
-            Text("AutoGIF")
+            Text("Captura")
                 .font(.system(size: 18, weight: .bold))
                 .padding([.leading], 10)
             VStack(alignment: .center){
