@@ -7,77 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8002BBA027B79BF300F19B72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002BB9F27B79BF300F19B72 /* ContentView.swift */; };
-		8002BBA227B79BF400F19B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8002BBA127B79BF400F19B72 /* Assets.xcassets */; };
-		8002BBA527B79BF400F19B72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8002BBA427B79BF400F19B72 /* Preview Assets.xcassets */; };
-		8002BBAD27B79FDB00F19B72 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */; };
-		8002BBAF27B7A09A00F19B72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */; };
-		8021E1E827C046A4003C69CC /* AutoGIFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021E1E727C046A4003C69CC /* AutoGIFApp.swift */; };
-		8021E1F027C0C320003C69CC /* Aperture in Frameworks */ = {isa = PBXBuildFile; productRef = 8021E1EF27C0C320003C69CC /* Aperture */; };
-		80ADE1E927C15EE000C664B9 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADE1E827C15EE000C664B9 /* Recorder.swift */; };
+		807A0C1527ED1C77004ED793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807A0C1427ED1C77004ED793 /* Assets.xcassets */; };
+		807A0C1827ED1C77004ED793 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807A0C1727ED1C77004ED793 /* Preview Assets.xcassets */; };
+		807A0C2127ED1C9C004ED793 /* Aperture in Frameworks */ = {isa = PBXBuildFile; productRef = 807A0C2027ED1C9C004ED793 /* Aperture */; };
+		80AC934527ED1E14004A7A02 /* CapturaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934127ED1E14004A7A02 /* CapturaApp.swift */; };
+		80AC934627ED1E14004A7A02 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934227ED1E14004A7A02 /* StatusBarController.swift */; };
+		80AC934727ED1E14004A7A02 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934327ED1E14004A7A02 /* Recorder.swift */; };
+		80AC934827ED1E14004A7A02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934427ED1E14004A7A02 /* ContentView.swift */; };
+		80AC934A27ED1E20004A7A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934927ED1E20004A7A02 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8002BB9A27B79BF300F19B72 /* AutoGIF Spooler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoGIF Spooler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8002BB9F27B79BF300F19B72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8002BBA127B79BF400F19B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8002BBA427B79BF400F19B72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8002BBA627B79BF400F19B72 /* AutoGIF_Spooler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoGIF_Spooler.entitlements; sourceTree = "<group>"; };
-		8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
-		8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8021E1E727C046A4003C69CC /* AutoGIFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoGIFApp.swift; sourceTree = "<group>"; };
-		8021E1EB27C04757003C69CC /* AutoGIF-Spooler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AutoGIF-Spooler-Info.plist"; sourceTree = SOURCE_ROOT; };
-		80ADE1E827C15EE000C664B9 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		807A0C0D27ED1C76004ED793 /* Captura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Captura.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		807A0C1427ED1C77004ED793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		807A0C1727ED1C77004ED793 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		807A0C1927ED1C77004ED793 /* Captura.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Captura.entitlements; sourceTree = "<group>"; };
+		80AC934127ED1E14004A7A02 /* CapturaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturaApp.swift; sourceTree = SOURCE_ROOT; };
+		80AC934227ED1E14004A7A02 /* StatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = SOURCE_ROOT; };
+		80AC934327ED1E14004A7A02 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = SOURCE_ROOT; };
+		80AC934427ED1E14004A7A02 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = SOURCE_ROOT; };
+		80AC934927ED1E20004A7A02 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8002BB9727B79BF300F19B72 /* Frameworks */ = {
+		807A0C0A27ED1C76004ED793 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8021E1F027C0C320003C69CC /* Aperture in Frameworks */,
+				807A0C2127ED1C9C004ED793 /* Aperture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8002BB9127B79BF300F19B72 = {
+		807A0C0427ED1C76004ED793 = {
 			isa = PBXGroup;
 			children = (
-				8002BB9C27B79BF300F19B72 /* AutoGIF Spooler */,
-				8002BB9B27B79BF300F19B72 /* Products */,
+				807A0C0F27ED1C76004ED793 /* Captura */,
+				807A0C0E27ED1C76004ED793 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8002BB9B27B79BF300F19B72 /* Products */ = {
+		807A0C0E27ED1C76004ED793 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8002BB9A27B79BF300F19B72 /* AutoGIF Spooler.app */,
+				807A0C0D27ED1C76004ED793 /* Captura.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8002BB9C27B79BF300F19B72 /* AutoGIF Spooler */ = {
+		807A0C0F27ED1C76004ED793 /* Captura */ = {
 			isa = PBXGroup;
 			children = (
-				80ADE1E827C15EE000C664B9 /* Recorder.swift */,
-				8021E1EB27C04757003C69CC /* AutoGIF-Spooler-Info.plist */,
-				8002BB9F27B79BF300F19B72 /* ContentView.swift */,
-				8002BBA127B79BF400F19B72 /* Assets.xcassets */,
-				8002BBA627B79BF400F19B72 /* AutoGIF_Spooler.entitlements */,
-				8002BBA327B79BF400F19B72 /* Preview Content */,
-				8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */,
-				8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */,
-				8021E1E727C046A4003C69CC /* AutoGIFApp.swift */,
+				80AC934427ED1E14004A7A02 /* ContentView.swift */,
+				80AC934927ED1E20004A7A02 /* AppDelegate.swift */,
+				80AC934127ED1E14004A7A02 /* CapturaApp.swift */,
+				80AC934327ED1E14004A7A02 /* Recorder.swift */,
+				80AC934227ED1E14004A7A02 /* StatusBarController.swift */,
+				807A0C1427ED1C77004ED793 /* Assets.xcassets */,
+				807A0C1927ED1C77004ED793 /* Captura.entitlements */,
+				807A0C1627ED1C77004ED793 /* Preview Content */,
 			);
-			path = "AutoGIF Spooler";
+			path = Captura;
 			sourceTree = "<group>";
 		};
-		8002BBA327B79BF400F19B72 /* Preview Content */ = {
+		807A0C1627ED1C77004ED793 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				8002BBA427B79BF400F19B72 /* Preview Assets.xcassets */,
+				807A0C1727ED1C77004ED793 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -85,42 +83,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8002BB9927B79BF300F19B72 /* AutoGIF Spooler */ = {
+		807A0C0C27ED1C76004ED793 /* Captura */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8002BBA927B79BF400F19B72 /* Build configuration list for PBXNativeTarget "AutoGIF Spooler" */;
+			buildConfigurationList = 807A0C1C27ED1C77004ED793 /* Build configuration list for PBXNativeTarget "Captura" */;
 			buildPhases = (
-				8002BB9627B79BF300F19B72 /* Sources */,
-				8002BB9727B79BF300F19B72 /* Frameworks */,
-				8002BB9827B79BF300F19B72 /* Resources */,
+				807A0C0927ED1C76004ED793 /* Sources */,
+				807A0C0A27ED1C76004ED793 /* Frameworks */,
+				807A0C0B27ED1C76004ED793 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "AutoGIF Spooler";
+			name = Captura;
 			packageProductDependencies = (
-				8021E1EF27C0C320003C69CC /* Aperture */,
+				807A0C2027ED1C9C004ED793 /* Aperture */,
 			);
-			productName = "AutoGIF Spooler";
-			productReference = 8002BB9A27B79BF300F19B72 /* AutoGIF Spooler.app */;
+			productName = Captura;
+			productReference = 807A0C0D27ED1C76004ED793 /* Captura.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8002BB9227B79BF300F19B72 /* Project object */ = {
+		807A0C0527ED1C76004ED793 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					8002BB9927B79BF300F19B72 = {
+					807A0C0C27ED1C76004ED793 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 8002BB9527B79BF300F19B72 /* Build configuration list for PBXProject "AutoGIF Spooler" */;
+			buildConfigurationList = 807A0C0827ED1C76004ED793 /* Build configuration list for PBXProject "Captura" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,48 +126,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 8002BB9127B79BF300F19B72;
+			mainGroup = 807A0C0427ED1C76004ED793;
 			packageReferences = (
-				8021E1EE27C0C320003C69CC /* XCRemoteSwiftPackageReference "Aperture" */,
+				807A0C1F27ED1C9C004ED793 /* XCRemoteSwiftPackageReference "Aperture" */,
 			);
-			productRefGroup = 8002BB9B27B79BF300F19B72 /* Products */;
+			productRefGroup = 807A0C0E27ED1C76004ED793 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8002BB9927B79BF300F19B72 /* AutoGIF Spooler */,
+				807A0C0C27ED1C76004ED793 /* Captura */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8002BB9827B79BF300F19B72 /* Resources */ = {
+		807A0C0B27ED1C76004ED793 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8002BBA527B79BF400F19B72 /* Preview Assets.xcassets in Resources */,
-				8002BBA227B79BF400F19B72 /* Assets.xcassets in Resources */,
+				807A0C1827ED1C77004ED793 /* Preview Assets.xcassets in Resources */,
+				807A0C1527ED1C77004ED793 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8002BB9627B79BF300F19B72 /* Sources */ = {
+		807A0C0927ED1C76004ED793 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80ADE1E927C15EE000C664B9 /* Recorder.swift in Sources */,
-				8002BBAF27B7A09A00F19B72 /* AppDelegate.swift in Sources */,
-				8002BBA027B79BF300F19B72 /* ContentView.swift in Sources */,
-				8002BBAD27B79FDB00F19B72 /* StatusBarController.swift in Sources */,
-				8021E1E827C046A4003C69CC /* AutoGIFApp.swift in Sources */,
+				80AC934A27ED1E20004A7A02 /* AppDelegate.swift in Sources */,
+				80AC934627ED1E14004A7A02 /* StatusBarController.swift in Sources */,
+				80AC934827ED1E14004A7A02 /* ContentView.swift in Sources */,
+				80AC934527ED1E14004A7A02 /* CapturaApp.swift in Sources */,
+				80AC934727ED1E14004A7A02 /* Recorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8002BBA727B79BF400F19B72 /* Debug */ = {
+		807A0C1A27ED1C77004ED793 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		8002BBA827B79BF400F19B72 /* Release */ = {
+		807A0C1B27ED1C77004ED793 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,67 +282,55 @@
 			};
 			name = Release;
 		};
-		8002BBAA27B79BF400F19B72 /* Debug */ = {
+		807A0C1D27ED1C77004ED793 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "AutoGIF Spooler/AutoGIF_Spooler.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = Captura/Captura.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AutoGIF Spooler/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Captura/Preview Content\"";
 				DEVELOPMENT_TEAM = MT5RVRUJW7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AutoGIF-Spooler-Info.plist";
-				INFOPLIST_KEY_NSCameraUsageDescription = "AutoGIF needs permission for your camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "AutoGIF records audio as well as video";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "AutoGIF.AutoGIF-Spooler";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AutoGIF.Captura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		8002BBAB27B79BF400F19B72 /* Release */ = {
+		807A0C1E27ED1C77004ED793 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "AutoGIF Spooler/AutoGIF_Spooler.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = Captura/Captura.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AutoGIF Spooler/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Captura/Preview Content\"";
 				DEVELOPMENT_TEAM = MT5RVRUJW7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "AutoGIF-Spooler-Info.plist";
-				INFOPLIST_KEY_NSCameraUsageDescription = "AutoGIF needs permission for your camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "AutoGIF records audio as well as video";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "AutoGIF.AutoGIF-Spooler";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AutoGIF.Captura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -353,20 +339,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8002BB9527B79BF300F19B72 /* Build configuration list for PBXProject "AutoGIF Spooler" */ = {
+		807A0C0827ED1C76004ED793 /* Build configuration list for PBXProject "Captura" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8002BBA727B79BF400F19B72 /* Debug */,
-				8002BBA827B79BF400F19B72 /* Release */,
+				807A0C1A27ED1C77004ED793 /* Debug */,
+				807A0C1B27ED1C77004ED793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8002BBA927B79BF400F19B72 /* Build configuration list for PBXNativeTarget "AutoGIF Spooler" */ = {
+		807A0C1C27ED1C77004ED793 /* Build configuration list for PBXNativeTarget "Captura" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8002BBAA27B79BF400F19B72 /* Debug */,
-				8002BBAB27B79BF400F19B72 /* Release */,
+				807A0C1D27ED1C77004ED793 /* Debug */,
+				807A0C1E27ED1C77004ED793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -374,23 +360,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8021E1EE27C0C320003C69CC /* XCRemoteSwiftPackageReference "Aperture" */ = {
+		807A0C1F27ED1C9C004ED793 /* XCRemoteSwiftPackageReference "Aperture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/wulkano/Aperture";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8021E1EF27C0C320003C69CC /* Aperture */ = {
+		807A0C2027ED1C9C004ED793 /* Aperture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8021E1EE27C0C320003C69CC /* XCRemoteSwiftPackageReference "Aperture" */;
+			package = 807A0C1F27ED1C9C004ED793 /* XCRemoteSwiftPackageReference "Aperture" */;
 			productName = Aperture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 8002BB9227B79BF300F19B72 /* Project object */;
+	rootObject = 807A0C0527ED1C76004ED793 /* Project object */;
 }

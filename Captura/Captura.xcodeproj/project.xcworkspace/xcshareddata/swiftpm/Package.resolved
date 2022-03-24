@@ -5,9 +5,9 @@
         "package": "Aperture",
         "repositoryURL": "https://github.com/wulkano/Aperture",
         "state": {
-          "branch": null,
-          "revision": "59a3977cdda98b54869041e35566e22ec0acd985",
-          "version": "2.0.0"
+          "branch": "main",
+          "revision": "ddfb0fc1b3c789339dd5fd9296ba8076d292611c",
+          "version": null
         }
       }
     ]
