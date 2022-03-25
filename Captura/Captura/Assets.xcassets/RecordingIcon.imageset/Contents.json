@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "CapturaMenuBar-2.png",
+      "filename" : "CapturaRecording-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "CapturaMenuBar-1.png",
+      "filename" : "CapturaRecording-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "CapturaMenuBar.png",
+      "filename" : "CapturaRecording.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -22,7 +22,7 @@ class StatusBarController {
         
         if let statusBarButton = statusItem.button {
             statusBarButton.image = NSImage(imageLiteralResourceName: "MenuBarIcon")
-            statusBarButton.image?.size = NSSize(width: 28.0, height: 18.0)
+            statusBarButton.image?.size = NSSize(width: 24.0, height: 18.0)
             statusBarButton.image?.isTemplate = !recording
             statusBarButton.action = #selector(togglePopover(sender:))
             statusBarButton.target = self
@@ -51,8 +51,12 @@ class StatusBarController {
     func toggleImg() {
         recording = !recording
         if let statusBarButton = statusItem.button {
-            statusBarButton.image = NSImage(imageLiteralResourceName: "MenuBarIcon")
-            statusBarButton.image?.size = NSSize(width: 28.0, height: 18.0)
+            if recording {
+                statusBarButton.image = NSImage(imageLiteralResourceName: "RecordingIcon")
+            }else{
+                statusBarButton.image = NSImage(imageLiteralResourceName: "MenuBarIcon")
+            }
+            statusBarButton.image?.size = NSSize(width: 24.0, height: 18.0)
             statusBarButton.image?.isTemplate = !self.recording
             statusBarButton.action = #selector(togglePopover(sender:))
             statusBarButton.target = self
