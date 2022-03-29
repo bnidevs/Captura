@@ -10,19 +10,17 @@ import AppKit
 
 class StatusBarController {
     
-    private var statusBar: NSStatusBar
     private var statusItem: NSStatusItem
     private var popover: NSPopover
     private var recording: Bool = false
     
     init(_ popover: NSPopover) {
         self.popover = popover
-        statusBar = NSStatusBar.init()
-        statusItem = statusBar.statusItem(withLength: 28.0)
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         
         if let statusBarButton = statusItem.button {
             statusBarButton.image = NSImage(imageLiteralResourceName: "MenuBarIcon")
-            statusBarButton.image?.size = NSSize(width: 24.0, height: 18.0)
+            statusBarButton.image?.size = NSSize(width: NSStatusBar.system.thickness, height: NSStatusBar.system.thickness)
             statusBarButton.image?.isTemplate = !recording
             statusBarButton.action = #selector(togglePopover(sender:))
             statusBarButton.target = self
@@ -56,7 +54,7 @@ class StatusBarController {
             }else{
                 statusBarButton.image = NSImage(imageLiteralResourceName: "MenuBarIcon")
             }
-            statusBarButton.image?.size = NSSize(width: 24.0, height: 18.0)
+            statusBarButton.image?.size = NSSize(width: NSStatusBar.system.thickness, height: NSStatusBar.system.thickness)
             statusBarButton.image?.isTemplate = !self.recording
             statusBarButton.action = #selector(togglePopover(sender:))
             statusBarButton.target = self

@@ -1,0 +1,29 @@
+name: Releases
+
+on: 
+  push:
+    tags:
+    - 'V*'
+
+jobs:
+  release:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Remove Code Sign Identity
+        run: sed -i .bak 's/Mac Developer/-/g' ./Captura/Captura.xcodeproj/project.pbxproj
+      - name: Build
+        run: xcodebuild -scheme "Captura" -project Captura/Captura.xcodeproj build
+      - name: Archive
+        run: |
+          mkdir ./archives
+          xcodebuild -scheme "Captura" -archivePath "./archives/Captura.xcarchive" -project Captura/Captura.xcodeproj archive  
+      - name: Export
+        run: xcodebuild -exportArchive -archivePath "./archives/Captura.xcarchive/" -exportOptionsPlist exopt.plist -exportPath "./archives"
+      - name: Compress
+        run: zip -r -X ./archives/Captura.zip ./archives/Captura.app
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: ./archives/Captura.zip
