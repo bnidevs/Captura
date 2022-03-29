@@ -2,7 +2,7 @@
 
 <img height="150" src="https://github.com/bnidevs/Captura/blob/main/Captura/Captura/Assets.xcassets/AppIcon.appiconset/mac1024.png?raw=true">
 
-![build](https://github.com/bnidevs/Captura/actions/workflows/xcodebuild.yml/badge.svg)
+![build](https://github.com/bnidevs/Captura/actions/workflows/xcodebuild.yml/badge.svg) ![release](https://github.com/bnidevs/Captura/actions/workflows/releases.yml/badge.svg)
 
 Unobtrusive MacOS Native Screen Recorder
 
