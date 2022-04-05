@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		807A0C1527ED1C77004ED793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807A0C1427ED1C77004ED793 /* Assets.xcassets */; };
 		807A0C1827ED1C77004ED793 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807A0C1727ED1C77004ED793 /* Preview Assets.xcassets */; };
+		8097E88C27FCDEA0005C9BF0 /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097E88B27FCDEA0005C9BF0 /* Shortcuts.swift */; };
+		8097E88F27FCE2FD005C9BF0 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 8097E88E27FCE2FD005C9BF0 /* KeyboardShortcuts */; };
 		80AC934527ED1E14004A7A02 /* CapturaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934127ED1E14004A7A02 /* CapturaApp.swift */; };
 		80AC934627ED1E14004A7A02 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934227ED1E14004A7A02 /* StatusBarController.swift */; };
 		80AC934727ED1E14004A7A02 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934327ED1E14004A7A02 /* Recorder.swift */; };
@@ -23,6 +25,7 @@
 		807A0C1427ED1C77004ED793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		807A0C1727ED1C77004ED793 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		807A0C1927ED1C77004ED793 /* Captura.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Captura.entitlements; sourceTree = "<group>"; };
+		8097E88B27FCDEA0005C9BF0 /* Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
 		80AC934127ED1E14004A7A02 /* CapturaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturaApp.swift; sourceTree = SOURCE_ROOT; };
 		80AC934227ED1E14004A7A02 /* StatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = SOURCE_ROOT; };
 		80AC934327ED1E14004A7A02 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = SOURCE_ROOT; };
@@ -36,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F2765827ED32140076F716 /* Aperture in Frameworks */,
+				8097E88F27FCE2FD005C9BF0 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +74,7 @@
 				807A0C1427ED1C77004ED793 /* Assets.xcassets */,
 				807A0C1927ED1C77004ED793 /* Captura.entitlements */,
 				807A0C1627ED1C77004ED793 /* Preview Content */,
+				8097E88B27FCDEA0005C9BF0 /* Shortcuts.swift */,
 			);
 			path = Captura;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 			name = Captura;
 			packageProductDependencies = (
 				80F2765727ED32140076F716 /* Aperture */,
+				8097E88E27FCE2FD005C9BF0 /* KeyboardShortcuts */,
 			);
 			productName = Captura;
 			productReference = 807A0C0D27ED1C76004ED793 /* Captura.app */;
@@ -131,6 +137,7 @@
 			mainGroup = 807A0C0427ED1C76004ED793;
 			packageReferences = (
 				80F2765627ED32140076F716 /* XCRemoteSwiftPackageReference "Aperture" */,
+				8097E88D27FCE2FD005C9BF0 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			productRefGroup = 807A0C0E27ED1C76004ED793 /* Products */;
 			projectDirPath = "";
@@ -163,6 +170,7 @@
 				80AC934827ED1E14004A7A02 /* ContentView.swift in Sources */,
 				80AC934527ED1E14004A7A02 /* CapturaApp.swift in Sources */,
 				80AC934727ED1E14004A7A02 /* Recorder.swift in Sources */,
+				8097E88C27FCDEA0005C9BF0 /* Shortcuts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = AutoGIF.Captura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -341,7 +349,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = AutoGIF.Captura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -374,6 +382,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8097E88D27FCE2FD005C9BF0 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = exactVersion;
+				version = 1.4.0;
+			};
+		};
 		80F2765627ED32140076F716 /* XCRemoteSwiftPackageReference "Aperture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/wulkano/Aperture";
@@ -385,6 +401,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8097E88E27FCE2FD005C9BF0 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8097E88D27FCE2FD005C9BF0 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
 		80F2765727ED32140076F716 /* Aperture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 80F2765627ED32140076F716 /* XCRemoteSwiftPackageReference "Aperture" */;

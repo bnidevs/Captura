@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Aperture
+import KeyboardShortcuts
 
 struct ContentView: View {
     @Binding public var recorder: Recorder
@@ -47,8 +48,15 @@ struct ContentView: View {
                         })
                 }
                     .frame(width: 200, height: 20, alignment: .topLeading)
+                HStack(alignment: .center, spacing: 10){
+                    Text("Shortcut: ")
+                        .bold()
+                    KeyboardShortcuts.Recorder(for: .startstoprecord)
+                        .frame(width: 50, height: 20, alignment: .topLeading)
+                }
+                    .frame(width: 200, height: 20, alignment: .topLeading)
             }
-                .frame(width: 200, height: 50)
+                .frame(width: 200, height: 80)
                 .padding(10)
                 .background(Color.init(red: 0, green: 0, blue: 0, opacity: 0.3))
                 .cornerRadius(5)
@@ -60,21 +68,19 @@ struct ContentView: View {
                 .frame(width: 200, height: 10, alignment: .center)
                 .padding(10)
         }
-            .frame(width: 200, height: 130, alignment: .center)
+            .frame(width: 200, height: 150, alignment: .center)
             .padding(20)
     }
     
     func callSS(){
         recordingState = !recordingState
         recorder.startStop()
-        if(recordingState){
-            sbc?.toggleImg()
+        if(recordingState && sbc!.popover.isShown){
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 sbc?.togglePopover(sender: 1 as NSNumber)
             }
-        }else{
-            sbc?.toggleImg()
         }
+        sbc?.toggleImg()
     }
     
     func switchFT(){

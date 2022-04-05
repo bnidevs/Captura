@@ -8,6 +8,7 @@
 import Foundation
 import Cocoa
 import SwiftUI
+import KeyboardShortcuts
 
 enum NoScreenAccess: Error {
     case noscreenaccess
@@ -41,6 +42,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }else{
                 appdata.recordPerm = true
             }
+        }
+        
+        KeyboardShortcuts.onKeyUp(for: .startstoprecord) {
+            contentView.callSS()
         }
     }
 

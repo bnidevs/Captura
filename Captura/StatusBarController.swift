@@ -11,7 +11,7 @@ import AppKit
 class StatusBarController {
     
     private var statusItem: NSStatusItem
-    private var popover: NSPopover
+    public var popover: NSPopover
     private var recording: Bool = false
     
     init(_ popover: NSPopover) {
