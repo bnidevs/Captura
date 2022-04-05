@@ -36,8 +36,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if(!appdata.recordPerm){
             if(!CGRequestScreenCaptureAccess()){
                 let errordialog = NSAlert.init(error: NoScreenAccess.noscreenaccess)
-                errordialog.messageText = "AutoGIF requires screen recording access"
-                errordialog.informativeText = "Please proceed to the 'Security and Privacy' section in your System Preferences and enable permissions for AutoGIF to record your screen, then restart the app"
+                errordialog.messageText = "Captura requires screen recording access"
+                errordialog.informativeText = "Please proceed to the 'Security and Privacy' section in your System Preferences and enable permissions for Captura to record your screen, then restart the app"
                 errordialog.runModal()
             }else{
                 appdata.recordPerm = true

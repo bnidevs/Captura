@@ -23,7 +23,7 @@ struct ContentView: View {
         VStack(alignment: .leading, spacing: 10){
             Text("Captura")
                 .font(.system(size: 18, weight: .bold))
-                .padding([.leading], 10)
+                .padding([.leading,.top], 5)
             VStack(alignment: .center){
                 HStack(alignment: .center, spacing: 10){
                     Text("Recording")
@@ -51,8 +51,9 @@ struct ContentView: View {
                 HStack(alignment: .center, spacing: 10){
                     Text("Shortcut: ")
                         .bold()
+                        .fixedSize(horizontal: true, vertical: true)
+                        .padding([.trailing], -5)
                     KeyboardShortcuts.Recorder(for: .startstoprecord)
-                        .frame(width: 50, height: 20, alignment: .topLeading)
                 }
                     .frame(width: 200, height: 20, alignment: .topLeading)
             }
@@ -68,7 +69,7 @@ struct ContentView: View {
                 .frame(width: 200, height: 10, alignment: .center)
                 .padding(10)
         }
-            .frame(width: 200, height: 150, alignment: .center)
+            .frame(width: 200, height: 155, alignment: .center)
             .padding(20)
     }
     
