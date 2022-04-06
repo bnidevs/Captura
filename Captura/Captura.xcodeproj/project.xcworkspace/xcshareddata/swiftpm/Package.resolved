@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Aperture",
-        "repositoryURL": "https://github.com/wulkano/Aperture",
-        "state": {
-          "branch": null,
-          "revision": "ddfb0fc1b3c789339dd5fd9296ba8076d292611c",
-          "version": "2.0.1"
-        }
-      },
-      {
-        "package": "KeyboardShortcuts",
-        "repositoryURL": "https://github.com/sindresorhus/KeyboardShortcuts",
-        "state": {
-          "branch": null,
-          "revision": "9bc72c441c713362a137ecbb4104920655a9aa5e",
-          "version": "1.4.0"
-        }
+  "pins" : [
+    {
+      "identity" : "aperture",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wulkano/Aperture",
+      "state" : {
+        "revision" : "ddfb0fc1b3c789339dd5fd9296ba8076d292611c",
+        "version" : "2.0.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "keyboardshortcuts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/KeyboardShortcuts",
+      "state" : {
+        "revision" : "0dcedd56994d871f243f3d9c76590bfd9f8aba69",
+        "version" : "1.5.0"
+      }
+    }
+  ],
+  "version" : 2
 }

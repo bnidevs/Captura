@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8007A0B127FD3BC500CEE181 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 8007A0B027FD3BC500CEE181 /* KeyboardShortcuts */; };
 		807A0C1527ED1C77004ED793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807A0C1427ED1C77004ED793 /* Assets.xcassets */; };
 		807A0C1827ED1C77004ED793 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807A0C1727ED1C77004ED793 /* Preview Assets.xcassets */; };
 		8097E88C27FCDEA0005C9BF0 /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8097E88B27FCDEA0005C9BF0 /* Shortcuts.swift */; };
-		8097E88F27FCE2FD005C9BF0 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 8097E88E27FCE2FD005C9BF0 /* KeyboardShortcuts */; };
 		80AC934527ED1E14004A7A02 /* CapturaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934127ED1E14004A7A02 /* CapturaApp.swift */; };
 		80AC934627ED1E14004A7A02 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934227ED1E14004A7A02 /* StatusBarController.swift */; };
 		80AC934727ED1E14004A7A02 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AC934327ED1E14004A7A02 /* Recorder.swift */; };
@@ -39,7 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F2765827ED32140076F716 /* Aperture in Frameworks */,
-				8097E88F27FCE2FD005C9BF0 /* KeyboardShortcuts in Frameworks */,
+				8007A0B127FD3BC500CEE181 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 			name = Captura;
 			packageProductDependencies = (
 				80F2765727ED32140076F716 /* Aperture */,
-				8097E88E27FCE2FD005C9BF0 /* KeyboardShortcuts */,
+				8007A0B027FD3BC500CEE181 /* KeyboardShortcuts */,
 			);
 			productName = Captura;
 			productReference = 807A0C0D27ED1C76004ED793 /* Captura.app */;
@@ -137,7 +137,7 @@
 			mainGroup = 807A0C0427ED1C76004ED793;
 			packageReferences = (
 				80F2765627ED32140076F716 /* XCRemoteSwiftPackageReference "Aperture" */,
-				8097E88D27FCE2FD005C9BF0 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				8007A0AF27FD3BC500CEE181 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			productRefGroup = 807A0C0E27ED1C76004ED793 /* Products */;
 			projectDirPath = "";
@@ -316,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 1.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = AutoGIF.Captura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -349,7 +349,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 1.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = AutoGIF.Captura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -382,12 +382,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8097E88D27FCE2FD005C9BF0 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+		8007A0AF27FD3BC500CEE181 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
 			requirement = {
-				kind = exactVersion;
-				version = 1.4.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
 			};
 		};
 		80F2765627ED32140076F716 /* XCRemoteSwiftPackageReference "Aperture" */ = {
@@ -401,9 +401,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8097E88E27FCE2FD005C9BF0 /* KeyboardShortcuts */ = {
+		8007A0B027FD3BC500CEE181 /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8097E88D27FCE2FD005C9BF0 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			package = 8007A0AF27FD3BC500CEE181 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
 			productName = KeyboardShortcuts;
 		};
 		80F2765727ED32140076F716 /* Aperture */ = {
