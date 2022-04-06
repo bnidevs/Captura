@@ -14,7 +14,7 @@ jobs:
       - name: Switch XCode Version
         run: |
           xcode-select --print-path > current-xcode.txt
-          sed -i .back 's/[0-9]+\.[0-9]+\.?[0-9]*/13\.3/g' current-xcode.txt
+          sed -i .back 's/[0-9][0-9]*\.[0-9][0-9]*\.*[0-9]*/13\.3/g' current-xcode.txt
           cat current-xcode.txt | sudo xcode-select -switch `xargs`
           cat current-xcode.txt
       - name: Build
