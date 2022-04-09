@@ -6,7 +6,7 @@
 
 Unobtrusive MacOS Native Screen Recorder
 
-Built with [Aperture](https://github.com/wulkano/Aperture)
+Built with [Aperture](https://github.com/wulkano/Aperture) and [KeyboardShortcuts](https://github.com/sindresorhus/KeyboardShortcuts)
 
 ### Zooming
 
