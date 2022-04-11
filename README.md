@@ -4,7 +4,7 @@
 
 ![build](https://github.com/bnidevs/Captura/actions/workflows/xcodebuild.yml/badge.svg) ![release](https://github.com/bnidevs/Captura/actions/workflows/releases.yml/badge.svg)
 
-Unobtrusive MacOS Native Screen Recorder
+Unobtrusive MacOS Native Screen Recorder 
 
 Built with [Aperture](https://github.com/wulkano/Aperture) and [KeyboardShortcuts](https://github.com/sindresorhus/KeyboardShortcuts)
 
